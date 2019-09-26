@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.QLThongTinCaNhan.KhaoSatSVActivity"></activity>
+        <activity android:name=".View.HomeActivity"></activity>
+        <activity android:name=".View.TabQuenMKActivity" />
+        <activity android:name=".View.TabTTHTActivity" />
+        <activity android:name=".View.TabDKXTActivity" />
+        <activity android:name=".View.ThanhToanActivity$TabTTHTActivity" />
+        <activity android:name=".View.QLThongTinCaNhan.KhaoSatSVActivity" />
         <activity android:name=".View.QLThongTinCaNhan.ThongTinSVActivity" />
         <activity android:name=".View.QLThongTinCaNhan.DiemSVActivity" />
         <activity android:name=".View.ThanhToanActivity" />

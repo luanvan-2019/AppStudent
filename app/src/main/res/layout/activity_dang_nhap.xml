@@ -6,12 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/b"
     android:gravity="center"
     tools:context=".View.MainActivity">
     <TextView
         android:gravity="center"
         android:text="ĐĂNG NHẬP"
-        android:textSize="30dp"
+        android:textSize="35dp"
+        android:textColor="#000"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
@@ -31,14 +34,15 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <Button
-            android:layout_marginLeft="100dp"
-            android:layout_marginRight="30dp"
             android:id="@+id/buttondangky"
-            android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Đăng Ký" />
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:text="Đăng ký" />
         <Button
             android:id="@+id/buttondangnhap"
             android:layout_marginTop="50dp"

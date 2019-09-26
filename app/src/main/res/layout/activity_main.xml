@@ -2,54 +2,55 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:background="@drawable/b"
+    android:weightSum="30"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".View.MainActivity">
-    <TextView
-        android:gravity="center"
-        android:text="ĐĂNG NHẬP"
-        android:textSize="30dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
-    <EditText
-        android:layout_marginTop="20dp"
-        android:hint="Nhập tên tài khoản"
-        android:id="@+id/edittextuser"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
-        android:layout_marginTop="20dp"
-        android:hint="Nhập mật khẩu"
-        android:id="@+id/edittextpassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="10"
+        android:padding="30dp"
+        android:src="@drawable/a">
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="9"
+        android:gravity="center_vertical">
+
         <Button
-            android:layout_marginLeft="100dp"
-            android:layout_marginRight="30dp"
-            android:id="@+id/buttondangky"
-            android:layout_marginTop="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Đăng Ký" />
+            android:id="@+id/btn_dn"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginBottom="25dp"
+            android:background="#103667"
+            android:text="Đăng nhập "
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
         <Button
-            android:id="@+id/buttondangnhap"
-            android:layout_marginTop="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Đăng Nhập" />
-    </LinearLayout>
-    <Button
-        android:id="@+id/buttonthoat"
-        android:layout_marginTop="20dp"
-        android:text="Thoát"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            android:id="@+id/btn_dk"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@id/btn_dn"
+            android:background="#103667"
+            android:text="Đăng ký xét tuyển"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+
+            android:textSize="25dp" />
+
+
+    </RelativeLayout>
+
 </LinearLayout>
